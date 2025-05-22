@@ -123,6 +123,7 @@ footer {
     font-size: 0.9em; /* Ligeramente más pequeño */
 }
 
+/* estilo de las galerias */
 .img {
     display: flex;
     padding:1px;
@@ -147,6 +148,30 @@ footer {
 }
 
 .galeria img:hover {
+    width: 500px;
+    opacity: 1;
+    filter: brightness(130%);
+}
+
+.galeria-2 {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding-left: 700px;
+    position: relative;
+    bottom: 400px;
+  }
+  
+.galeria-2 img{
+    max-width: 180px;
+    padding: 0.2rem;
+    flex-grow: 1;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: .7s ease;
+}
+
+.galeria-2 img:hover {
     width: 500px;
     opacity: 1;
     filter: brightness(130%);
