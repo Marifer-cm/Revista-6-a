@@ -154,6 +154,7 @@ section p {
     text-decoration: none;
     transition: color 0.3s ease;
     font-family: "Times New Roman", serif; /* Fuente Times New Roman con una alternativa serif */
+    font-size: 30px;
 }
  
 #noticias ul li a:hover {
