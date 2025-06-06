@@ -43,13 +43,15 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    bottom: 40px;
     text-align: center;
+    position: relative;
 }
  
 nav ul li {
     display: inline;
     margin: 0 15px;
-    font-size: 15px;
+    font-size: 18px;
     font-family: "Times New Roman", serif; /* Fuente Times New Roman con una alternativa serif */
 }
  
@@ -71,7 +73,16 @@ nav ul li a:hover {
 main {
     padding: 20px;
 }
- 
+
+div.imagenmapa{
+    display: flex;
+    flex-direction: row;
+}
+
+div iframe{
+    float: right;
+}
+
 section {
     background-color: #FFFFFF; /* Fondo blanco para las secciones de contenido */
     padding: 20px;
@@ -84,7 +95,7 @@ section h2, section h3 {
     color: #000080; /* Azul marino para los títulos de sección */
     margin-top: 0;
     font-size:  40px; /* Ligeramente más grandes que los párrafos */
-    font-family: "Times New Roman", serif; /* Fuente Times New Roman con una alternativa serif */
+    font-family: Lucida Handwriting;
 }
  
 section p {
@@ -102,7 +113,7 @@ section p {
     font-size: 40px; /* Título principal más grande */
     color: #803463; /* Título principal en naranja */
     margin-bottom: 15px;
-    font-family: "Times New Roman", serif; /* Fuente Times New Roman con una alternativa serif */
+   font-family: Lucida Handwriting;
 }
  
 #inicio p {
@@ -168,18 +179,24 @@ section p {
 /* Estilos del pie de página */
 footer {
     background-color:#e2adce; /* Azul marino para el pie de página */
-    color: #FFFFFF;
+    color: #000000;
     text-align: center;
     padding: 1em 0;
-    position: sticky;
+    position: relative;
     bottom: 0;
     width: 100%;
     font-size: 0.9em; /* Ligeramente más pequeño */
 }
 
+footer p{
+    font-size: 15px;
+}
+
+
 .video-portada {
     position: relative;
     text-align: center;
+    display: flex;
 }
 
 /* Estilo de la pantalla de carga */

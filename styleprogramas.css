@@ -44,12 +44,16 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    bottom: 40px;
     text-align: center;
+    position: relative;
 }
  
 nav ul li {
     display: inline;
     margin: 0 15px;
+    font-size: 18px;
+    font-family: "Times New Roman", serif; /* Fuente Times New Roman con una alternativa serif */
 }
  
 nav ul li a {
@@ -67,6 +71,17 @@ nav ul li a:hover {
 }
  
 /* Estilos del contenido principal */
+
+.galeria-carreras{
+    padding: 50px 50px 50px 0px;
+    text-align: center;
+}
+
+.galeria-bachillerato{
+    padding: 30px 50px 50px 50px;
+    
+    text-align: center;
+}
 main {
     padding: 20px;
 }
@@ -74,6 +89,7 @@ main {
 section {
     background-color: #FFFFFF; /* Fondo blanco para las secciones de contenido */
     padding: 20px;
+    border: 5px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -104,7 +120,7 @@ h2 {
 }
  
 #inicio p {
-    font-size: 20px; /* Tamaño de fuente para los párrafos */
+    font-size: 1.1em; /* Párrafos ligeramente más grandes */
     margin-bottom: 20px;
     text-align: justify;
 }
@@ -116,10 +132,11 @@ h2 {
  
 /* Estilos para la sección de noticias */
 #noticias h3 {
-    font-size:  40px; /* Ligeramente más grandes que los párrafos */
+    font-size: 1.4em; /* Título de noticias un poco más grande */
     color: #333; /* Color más oscuro para el título de noticias */
     margin-bottom: 10px;
     text-align: center; /* Centra el título de noticias */
+    font-family: Lucida Handwriting;
 }
  
 #noticias ul {
@@ -140,11 +157,13 @@ h2 {
     color: #007bff; /* Color azul para los enlaces de noticias */
     text-decoration: none;
     transition: color 0.3s ease;
+    font-family: Lucida Handwriting;
 }
  
 #noticias ul li a:hover {
     color: #0056b3; /* Color más oscuro al pasar el ratón */
     text-decoration: underline; /* Subrayado al pasar el ratón */
+    font-family: Lucida Handwriting;
 }
  
 .boton {
@@ -165,13 +184,17 @@ h2 {
 /* Estilos del pie de página */
 footer {
     background-color:#e2adce; /* Azul marino para el pie de página */
-    color: #FFFFFF;
+    color: #000000;
     text-align: center;
     padding: 1em 0;
-    position: sticky;
+    position: relative;
     bottom: 0;
     width: 100%;
     font-size: 0.9em; /* Ligeramente más pequeño */
+}
+
+footer p{
+    font-size: 15px;
 }
 
 .card {
@@ -198,7 +221,7 @@ footer {
 .card h3 {
     color: #000080; /* Azul marino para los títulos de sección */
     margin-top: 0;
-    font-size:  40px; /* Ligeramente más grandes que los párrafos */
+    font-size: 1.6em; /* Ligeramente más grandes que los párrafos */
     text-align: center;
 }
 

@@ -43,12 +43,16 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    bottom: 40px;
     text-align: center;
+    position: relative;
 }
  
 nav ul li {
     display: inline;
     margin: 0 15px;
+    font-size: 18px;
+    font-family: "Times New Roman", serif; /* Fuente Times New Roman con una alternativa serif */
 }
  
 nav ul li a {
@@ -82,10 +86,12 @@ section h2, section h3 {
     color: #000080; /* Azul marino para los títulos de sección */
     margin-top: 0;
     font-size:  40px; /* Ligeramente más grandes que los párrafos */
+    font-family: Lucida Handwriting;
 }
  
 section p {
-     font-size: 20px; /* Tamaño de fuente para los párrafos */
+    font-size: 20px; /* Tamaño de fuente para los párrafos */
+    font-family: "Times New Roman", serif; /* Fuente Times New Roman con una alternativa serif */
 }
  
 /* Estilos específicos para la sección de inicio */
@@ -115,13 +121,17 @@ section p {
 /* Estilos del pie de página */
 footer {
     background-color:#e2adce; /* Azul marino para el pie de página */
-    color: #FFFFFF;
+    color: #000000;
     text-align: center;
     padding: 1em 0;
-    position: sticky;
+    position: relative;
     bottom: 0;
     width: 100%;
     font-size: 0.9em; /* Ligeramente más pequeño */
+}
+
+footer p{
+    font-size: 15px;
 }
 
 /* estilo de las galerias */
@@ -133,11 +143,16 @@ footer {
 
 .galeria {
     display: flex;
-    width: 700px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
     padding-left: 750px;
     position: relative;
     bottom:400px;
+}
+
+img{
+    width: 700px;
+    height: 400px;
 }
 
 .galeria img {
@@ -176,6 +191,23 @@ footer {
     width: 500px;
     opacity: 1;
     filter: brightness(130%);
+}
+
+.galeria-video {
+    display: flex;
+    width: 400px;
+    height: 350px;
+    padding-left: 780px;
+    position: relative;
+    bottom: 400px;
+}
+
+.galeria1-video {
+    display: flex;
+    width: 400px;
+    height: 350px;
+    padding-left: 780px;
+    position: relative;
 }
 
 /* Estilo de la pantalla de carga */
