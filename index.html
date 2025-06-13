@@ -2,16 +2,14 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Liceo de Artes y Oficios</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagenes-videos/Logo de liceo_png.ico" type="image/x-icon">
-
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="imagenes-videos/Logo de liceo_png.ico" type="image/x-icon" />
 </head>
 
 <body>
-
     <!-- Pantalla de carga -->
     <div id="loader">
         <div class="dots-loader">
@@ -23,32 +21,33 @@
         // Oculta el loader y muestra el contenido cuando se carga la página
         window.addEventListener("load", function () {
             document.getElementById("loader").style.display = "none";
-            document.getElementById("content").style.display = "block";
         });
     </script>
 
     <header>
         <div class="logo">
-            <img src="imagenes-videos/Logo-Color-Horizontal.png" alt="">
+            <img src="imagenes-videos/Logo-Color-Horizontal.png" alt="Logo Liceo" />
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="programas.html">Cursos, carreras y bachillerato</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            ☰
+        </button>
+         <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="programas.html">Cursos, carreras y bachillerato</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
     </header>
 
     <main>
         <div class="video-portada">
             <iframe width="1000" height="550"
-                src="https://www.youtube.com/embed/tjRiYBno_Jo?autoplay=1&mute=1&loop=1&playlist=tjRiYBno_Jo"
+                src="https://www.youtube.com/embed/tjRiYBno_Jo?autoplay=1&mute=1&loop=1&playlist=tjRiYBno_Jo&controls=0&modestbranding=1&rel=0"
                 title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
+                allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
         <section id="inicio">
@@ -83,21 +82,19 @@
         </section>
 
         <div class="imagen-mapa">
-            <img src="imagenes-videos\antoniochedraui.jpg" alt=" Antonio Chedraui Caram" height="400px" width="600px">
+            <img src="imagenes-videos/antoniochedraui.jpg" alt="Antonio Chedraui Caram" height="400" width="600" />
 
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237.184096048571!2d-92.93870137952261!3d17.981270705358874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd7805ef102dd%3A0x11d5bad94a1afbc1!2sLiceo%20de%20Artes%20y%20Oficios%20Villahermosa!5e0!3m2!1ses!2smx!4v1748966051376!5m2!1ses!2smx"
                 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                height="400px" width="600px"></iframe>
+                height="400" width="600"></iframe>
         </div>
-
 
         <section id="noticias">
             <h3>Noticias Recientes</h3>
             <ul>
-                <li><a href="https://www.facebook.com/liceochedrauivillahermosa/?locale=es_LA"
-                        target="_blank">Próximamente: Información
-                        sobre nuevas convocatorias. </a></li>
+                <li><a href="https://www.facebook.com/liceochedrauivillahermosa/?locale=es_LA" target="_blank"
+                        rel="noopener noreferrer">Próximamente: Información sobre nuevas convocatorias.</a></li>
                 <li><a href="eventos.html">Mantente al tanto de los eventos y actividades del Liceo.</a></li>
             </ul>
         </section>
@@ -106,10 +103,20 @@
     <footer>
         <p>&copy; 2025 Liceo de Artes y Oficios | Dirección: Cerrada, Heroico Colegio Militar, Primero de Mayo, 86100
             Villahermosa, Tab. | Teléfono: 993 313 9887</p>
-
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+    // Toggle del menú desplegable en móviles
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector("nav ul.menu");
+
+        toggle.addEventListener("click", function () {
+            menu.classList.toggle("active");
+        });
+    });
+</script>
+    
 </body>
 
 </html>
